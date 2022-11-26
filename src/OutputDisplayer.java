@@ -1,8 +1,8 @@
 //Message displayer for game
 public interface OutputDisplayer {
 	
-	void printWinMessage();
-	void printDefeatMessage();
+	void printWinMessage(int prediction, int randomNumber);
+	void printDefeatMessage(int prediction, int randomNumber);
 	void printGameHistory();
 	void gameStartedMessage();
 	void gameFinishedMessage();
