@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class NumberCreator implements ObjectCreator {
+public class GameNumberCreator implements ObjectCreator {
 	
 	//Random number arrange number limit
 	private int upperbound ;

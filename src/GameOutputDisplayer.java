@@ -17,12 +17,6 @@ public class GameOutputDisplayer implements OutputDisplayer {
 		
 	}
 
-	@Override
-	public void printGameHistory() {
-		// TODO Auto-generated method stub
-		
-		
-	}
 
 	@Override
 	public void gameStartedMessage() {
