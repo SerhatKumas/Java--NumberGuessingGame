@@ -2,19 +2,25 @@ import java.util.Scanner;
 
 public class GameInputController implements InputController{
 
-	private int userPrediction;
+	//default value
+	private int userInput = 0;
 	
+
 	@Override
 	public void takeInput(Object obj) {
-		// Taking user's prediction
-		System.out.println("Enter Your Prediction : ");
-		userPrediction = ((Scanner) obj).nextInt();
+		// Taking user's input
+		System.out.println("Enter the Number : ");
+		userInput = ((Scanner) obj).nextInt();
 	}
-
-	//User prediction get method
-	public int getUserPrediction() {
-		int returnNumber = this.userPrediction;
+	
+	
+	
+	@Override //User input get method
+	public int getUserInput() {
+		int returnNumber = this.userInput;
 		return returnNumber;
 	}
+	
+
 
 }

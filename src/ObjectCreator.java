@@ -2,6 +2,7 @@
 public interface ObjectCreator {
 
 	//Object creating method
-	void create(Object object);	
+	void createObject(Object object);
+	int getObject();
 	
 }

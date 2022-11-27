@@ -1,29 +1,21 @@
 import java.util.Random;
 
 public class GameNumberCreator implements ObjectCreator {
-	
-	//Random number arrange number limit
-	private int upperbound ;
+
 	//Random number created
-	private int randomNumber;
+	private int randomNumber = 0;
 
 	@Override
-	public void create(Object object) {
+	public void createObject(Object object) {
 		//Random number creation
-		randomNumber = ((Random) object).nextInt(upperbound);
+		randomNumber = ((Random) object).nextInt(11);
 	}
 	
 	
-	//Return of the random number
-	public int getRandomNumber() {
+	@Override //Return of the random number
+	public int getObject() {
 		int returnNumber = this.randomNumber + 1;
 		return returnNumber;
-	}
-
-
-	//Random number arrange number limit setter
-	public void setUpperbound(int upperbound) {
-		this.upperbound = upperbound;
 	}
 
 }
