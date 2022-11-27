@@ -7,10 +7,10 @@ public class GameInputController implements InputController{
 	
 
 	@Override
-	public void takeInput(Object obj) {
+	public void takeInput(Object object) {
 		// Taking user's input
 		System.out.println("Enter the Number : ");
-		userInput = ((Scanner) obj).nextInt();
+		userInput = ((Scanner) object).nextInt();
 	}
 	
 	
